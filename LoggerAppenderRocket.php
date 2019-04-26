@@ -29,7 +29,7 @@ require_once(LOG4PHP_DIR . '/LoggerAppenderSkeleton.php');
 require_once(LOG4PHP_DIR . '/LoggerLog.php');
 
 /**
- * Log events to an email address. It will be created an email for each event. 
+ * Log events to an rocket chat. It will be created an message for each event. 
  *
  * <p>Parameters are 
  * {@link $smtpHost} (optional), 
@@ -98,7 +98,7 @@ class LoggerAppenderRocket extends LoggerAppenderSkeleton {
             'title' => 'User',
             'color'=> '#764FA5', 
 			'collapsed' => true, 
-			'title_link' => $GLOBALS['site_URL']."index.php?module=CompanyUsers&parent=Tools&view=Detail&record=".$GLOBALS['current_user']->id,	
+			'title_link' => $GLOBALS['site_URL']."index.php?module=Users&parent=Settings&view=Detail&record=".$GLOBALS['current_user']->id,	
 			'fields' => [
 				[
 				'title' => 'username',
